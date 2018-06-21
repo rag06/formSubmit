@@ -1,5 +1,5 @@
 # formSubmit
-include js file and place below code in script tag
+include js file and place below code in script tag<br/>
 <code>
     $('form').enquiryFormSubmission({
         keys:['name','email','message'],
