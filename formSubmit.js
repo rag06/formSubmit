@@ -4,7 +4,6 @@
 
          // Establish our default settings
         var settings = $.extend({
-             keys:['name','email','message'],
              form:this,
              url:'http://127.0.0.1/anuragform.php',
              companyId:null
@@ -14,8 +13,6 @@
             event.preventDefault();
             var formDataArray =[];
             formDataArray = $(settings.form).serializeArray();
-            console.log(formDataArray);
-            formDataArray.push({name:"keys",value:settings.keys});
             formDataArray.push({name:"companyId",value:settings.companyId});
 
             $.ajax({
